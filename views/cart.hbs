@@ -1,0 +1,56 @@
+<h1>Checkout</h1>
+{{# if products }}
+<div class="cart page">
+    <ul class="list-group">
+        {{# each products }}
+        <li class="list-group-item clearfix">
+            <div class="col-xs-5">
+                <strong>{{ this.item.title }}</strong><br />
+                <h6>{{{this.item.description}}}</h6>
+            </div>
+            <div class="col-xs-2 text-right">
+                <span class="badge">{{ this.quantity }}</span>
+            </div>
+            <div class="col-xs-3 text-right">
+                Rs {{ this.price }}
+            </div>
+            <div class="col-xs-2 text-right">
+                <a href="/remove/{{this.item.id}}" class="btn btn-default"></i> Remove</a>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<div class="pay text-right">
+    <strong>Total:Rs {{ totalPrice }} </strong>
+</div>
+<hr>
+<div class="text-right">
+    <a href="#" type="button" class="pay btn btn-success">PAY</a>
+</div>
+{{ else }}
+
+{{!-- Slider Here --}}
+{{!-- Slider Here --}}
+{{/if}}
+<!-- Foooter -->
+<div class="footer">
+    <div class="row gap_u">
+        <div class="row container-fluid justify-content-center align-items-center">
+            <div class="text-center social">
+                <i class="fab fa-facebook-f fa-2x"></i>
+                <i class="fab fa-instagram fa-2x gap_l"></i>
+                <i class="fab fa-pinterest-square fa-2x gap_l"></i>
+                <i class="fab fa-twitter-square fa-2x gap_l"></i>
+                <i class="fab fa-linkedin-in fa-2x gap_l"></i>
+            </div>
+        </div>
+        <div class="row container-fluid justify-content-center align-items-center">
+            <div class="cr text-center">
+                <h3>
+                    ©2020 All Rights Reserverd By Caramel IT Services Pvt. Ltd.
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>

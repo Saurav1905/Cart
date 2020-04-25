@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "React_Course",
+
+    "description": "Product description",
+    "price": 2500
+  },
+  {
+    "id": 2,
+    "title": "Angular_Course",
+
+    "description": "Product description",
+    "price": 3000
+  },
+  {
+    "id": 3,
+    "title": "Redux_Course",
+
+    "description": "Product description",
+    "price": 1500
+  },
+  {
+    "id": 4,
+    "title": "Front-End_Course",
+
+    "description": "Product description",
+    "price": 1000
+  }
+]

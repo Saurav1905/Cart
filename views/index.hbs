@@ -1,0 +1,42 @@
+<h1>{{title}}</h1>
+{{# each products }}
+<div class="row wish">
+  <div class="col-md-12 wishlist">
+    <div class="thumbnail"> <span class="image-container"><img src="" alt=""></span>
+      <div class="caption">
+        <h3>{{ this.title }}</h3>
+        <p class="description">{{{this.description}}}</p>
+        <div class="clearfix">
+          <div class="price pull-left"><i class="fa fa-tag" aria-hidden="true"></i> Rs:{{ this.price }}/- </div>
+          <a href="/add/{{ this.id }}" class="add-to-cart btn btn-default pull-right" role="button"><i
+              class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{/each}}
+{{!-- Slider Here --}}
+{{!-- Slider Here --}}
+<!-- Foooter -->
+<div class="footer">
+  <div class="row gap_u">
+    <div class="row container-fluid justify-content-center align-items-center">
+      <div class="text-center social">
+        <i class="fab fa-facebook-f fa-2x"></i>
+        <i class="fab fa-instagram fa-2x gap_l"></i>
+        <i class="fab fa-pinterest-square fa-2x gap_l"></i>
+        <i class="fab fa-twitter-square fa-2x gap_l"></i>
+        <i class="fab fa-linkedin-in fa-2x gap_l"></i>
+      </div>
+    </div>
+    <div class="row container-fluid justify-content-center align-items-center">
+      <div class="cr text-center">
+        <h3>
+          ©2020 All Rights Reserverd By Caramel IT Services Pvt. Ltd.
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
